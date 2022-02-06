@@ -52,7 +52,7 @@ https://mtdng-javascript-counter.netlify.app/
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="/assets/img/screenshot.png" alt="screenshot" width="400" height="400">
+[product-screenshot]: assets/img/screenshot.png
 
 
 
@@ -89,15 +89,7 @@ I saw I should use "setTimout()" javascript method, so it'll be the next step.
 
 
 
-<!-- ROADMAP -->
-## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
