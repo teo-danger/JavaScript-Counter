@@ -1,12 +1,5 @@
 <div id="top"></div>
 
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][https://github.com/teo-danger/JavaScript-Counter/issues]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/matteo-dangi%C3%B2/]
-[![Project][Project-shield]][https://mtdng-javascript-counter.netlify.app/]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -19,14 +12,14 @@ https://mtdng-javascript-counter.netlify.app/
   <p align="center">
     A counter application implemented with javascript to testing my JS basic knowledges.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/teo-danger/JavaScript-Counter"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/teo-danger/JavaScript-Counter">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/teo-danger/JavaScript-Counter/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/teo-danger/JavaScript-Counter/issues">Request Feature</a>
   </p>
 </div>
 
@@ -59,7 +52,7 @@ https://mtdng-javascript-counter.netlify.app/
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="assets/img/screenshot.png" alt="screenshot" width="400" height="400">
+<img src="/assets/img/screenshot.png" alt="screenshot" width="400" height="400">
 
 
 
@@ -89,7 +82,8 @@ You can use this simple application to increase and decrease the counter and vis
 
 I have implemented counting with events, functions and if statements, and a reset button that appear when the counter display shows a number not equal to zero.
 
-I'd have liked to add a transition out on the reset button, but the "display: none;" css property, fire before the animation, so actually there isn't. I saw I should use "setTimout()" javascript method, so this is the next step.
+I'd have liked to add a transition out on the reset button, but the "display: none;" css property fires before the animation, so actually there's not. 
+I saw I should use "setTimout()" javascript method, so it'll be the next step.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
