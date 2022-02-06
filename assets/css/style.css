@@ -1,8 +1,4 @@
 @font-face {
-    font-family: "Boisu";
-    src: url('../fonts/Boisu-Stroke-webfont.woff') format('woff');
-}
-@font-face {
     font-family: "LED";
     src: url('../fonts/LightLEDDisplay7.woff') format('woff');
 }
@@ -14,33 +10,27 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-size: larger;
+    color: rgb(184, 182, 182);
+    text-align: center;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+    font-family: monospace;
     background-image: url(../img/pexels-miguel-á-padriñán-3785931.jpg);
     background-position: right top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120vh;
+   
 }
 
 h4{
-    color: rgb(184, 182, 182);
-    text-align: center;
     margin: 0 40px 130px 40px;
-    text-shadow: 2px 2px 20px rgb(0, 0, 0);
 }
 h2{
-    color: rgb(184, 182, 182);
-    text-align: center;
-    margin: 60px 40px 40px 40px;
-    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+    margin: 60px 40px 40px 40px; 
 }
 
 h1{
-    color: rgb(184, 182, 182);
-    text-align: center;
-    margin-top: 60px;
-    text-shadow: 2px 2px 20px rgb(0, 0, 0);
-
+    margin-top: 60px; 
 }
 
 .container{
@@ -176,6 +166,38 @@ h1{
 
 
 
+/* ||FOOTER */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+.footer p{
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.social{
+    margin: 8px 0 12px 0;
+    display: flex;
+    align-items: center;
+}
+.social img{
+    margin: 0 8px;
+    transition-duration: 0.3s;
+}
+.social img:hover{
+    transform: scale(1.4);
+    transition-duration: 0.3s;
+    text-shadow: 2px;
+}
+
+
+
                                  /*MEDIA QUERIES*/
 /*mobile 2*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
@@ -186,6 +208,7 @@ h1{
 }
 /*TABLET, DESKTOP*/
 @media only screen and (min-width: 769px) {
+
 .counter{
     transform: none;  
     width: 740px;
@@ -206,8 +229,10 @@ h1{
 }
 
 h4{
-    margin-bottom: 150px;
+    margin-bottom: 120px;
 }
+
+
 
 
 }

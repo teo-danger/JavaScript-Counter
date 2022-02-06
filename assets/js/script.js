@@ -4,21 +4,18 @@ const displayNum = document.querySelector('.display-num');
 const btnReset = document.querySelector('.btn-reset');
 
 
-
 let i = 0;
 updateDisplay();
 
 
 //eventListener
 decrease.addEventListener("click", () => {
-    btnSound(); //doesn't work
     i--;
     updateDisplay();
     showResetBtn();
     hideResetBtn();
 });
 increase.addEventListener("click", () => {
-    btnSound();//doesn't work
     i++;
     updateDisplay();
     showResetBtn();
@@ -28,9 +25,7 @@ btnReset.addEventListener("click", () => {
     i = 0;
     displayNum.innerHTML = i;
     hideResetBtn();
-    resetSound();//doesn't work
 });
-
 
 
 //functions
@@ -47,20 +42,11 @@ function hideResetBtn() {
     if (i === 0) {
         btnReset.classList.remove('show');
         btnReset.classList.add('hide');
-
     }
 };
 
 
-//sound -- doesn't work
-function btnSound() {
-    let sound = new Audio("../audio/click-btn.wav");
-    sound.play();
-};
-function resetSound() {
-    let sound = new Audio("../audio/click-reset.wav");
-    sound.play();
-};
+
 
 
 
