@@ -1,0 +1,213 @@
+@font-face {
+    font-family: "Boisu";
+    src: url('../fonts/Boisu-Stroke-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: "LED";
+    src: url('../fonts/LightLEDDisplay7.woff') format('woff');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(../img/pexels-miguel-á-padriñán-3785931.jpg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+}
+
+h4{
+    color: rgb(184, 182, 182);
+    text-align: center;
+    margin: 0 40px 130px 40px;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+h2{
+    color: rgb(184, 182, 182);
+    text-align: center;
+    margin: 60px 40px 40px 40px;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+
+h1{
+    color: rgb(184, 182, 182);
+    text-align: center;
+    margin-top: 60px;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.counter{
+    transform: rotate(-90deg);  
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+    height: 340px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px black;
+}
+
+.display-num{
+    font-family: "LED";
+    background-color: black;
+    border-top: 1px solid rgb(19, 19, 19);
+    border-bottom: 1px solid rgb(19, 19, 19);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 0, 0);
+    font-size: 10rem;
+    writing-mode: vertical-lr;       
+    text-orientation: sideways;   
+    text-shadow: 1px 1px 40px rgba(255, 0, 0, 0.541);   
+}
+/*display buttons*/
+.display-btn{
+    font-family: "LED";
+    font-size: 3rem;
+    width: 90px;
+    border: 1px solid rgb(19, 19, 19);
+    cursor: pointer;
+    color: white;
+    transition: 0.4s ease;
+    text-shadow: 1px 1px 30px rgba(255, 255, 255, 0.623);   
+}
+
+.display-btn p {
+    transform: rotate(90deg);      
+}
+
+.display-btn p:last-of-type{
+    padding-bottom: 5px;
+}
+
+.decrease{
+    background-color: black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;    
+}
+
+.increase{
+    background-color: black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+ 
+.decrease:hover,
+.increase:hover{
+    background-color: rgb(36, 33, 33);
+    transition: 0.4s ease;
+}
+
+
+.increase:active, 
+.decrease:active{
+    transform: scale(0.97);
+    transition: 0s none;
+    background-color: rgb(49, 48, 48);
+}
+
+
+/*reset button*/
+.btn-reset{
+    border:none;
+    position: absolute;
+    z-index: -1;
+    top: -90px;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    color: rgb(184, 182, 182);
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+
+.hide{
+    animation: disappear 0.5s ease-in-out;
+    display:none;
+}
+
+.show{
+    display:block;
+    animation: appear 0.5s ease-in-out;
+}
+
+
+@keyframes appear {
+    from {top: 0px;}   
+    to {top: -90px;}
+    0% {opacity: 0%;}
+    50% {opacity: 50%;}
+    100% {opacity: 100%;}
+}
+@keyframes disappear {
+    from {top: -90px;}
+    to {top: 0px;}
+    0% {opacity: 100%;}
+    50% {opacity: 50%;}
+    100% {opacity: 0%;}
+}
+
+.btn-reset:hover{
+    background-color: rgb(0, 0, 0);
+    border: black;
+    color: white;
+}
+
+
+
+                                 /*MEDIA QUERIES*/
+/*mobile 2*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+.counter{
+    width: 470px;
+    height: 460px;
+}
+}
+/*TABLET, DESKTOP*/
+@media only screen and (min-width: 769px) {
+.counter{
+    transform: none;  
+    width: 740px;
+    height: 460px;
+}
+.display-num{
+    font-size: 15rem;
+    width: 650px;
+    writing-mode: horizontal-tb;       
+    text-orientation: sideways;     
+}
+.display-btn p {
+    transform: none;      
+}
+
+h1{
+    margin: 30px 0;
+}
+
+h4{
+    margin-bottom: 150px;
+}
+
+
+}
