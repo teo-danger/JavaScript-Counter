@@ -52,8 +52,7 @@ https://mtdng-javascript-counter.netlify.app/
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="assets/img/screenshot.png" alt="screenshot" width="400" height="400">
-[product-screenshot]: assets/img/screenshot.png
+![screenshot](https://user-images.githubusercontent.com/96834338/152699082-63515901-04ba-4834-9bc9-30b03e510a15.png)
 
 
 
